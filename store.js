@@ -144,9 +144,9 @@ $(function () {
         document.getElementsByClassName("cart-quantity-input")[i].value);
         for (var k = 0; k < quantity; k++) {
             newItem = {
-                productname: document.getElementsByClassName("cart-item-title")[k].innerText,
+                productname: document.getElementsByClassName("cart-item-title")[i].innerText,
                 accountid: parseInt(localStorage.getItem("userId")),
-                productcost: parseInt(document.getElementsByClassName("cart-price")[k+1].innerText),
+                productcost: parseInt(document.getElementsByClassName("cart-price")[i+1].innerText),
             };
         
             console.log(newItem);
